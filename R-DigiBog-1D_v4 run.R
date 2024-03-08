@@ -21,7 +21,7 @@ k_param_a <- 31740 # cm yr-1, hydraulic conductivity model parameter (from Morri
 k_param_b <- 8 # hydraulic conductivity model parameter (from Morris et al., 2015)
 drain_effi <- 1 # draining efficiency, circular = 2, ellipse = 1 
 x_factor <- 0.5 # recalcitrance (from Morris et al., 2015)
-ddf <- 0.15 # mm degree C-1 day-1, degree day factor to calculate snowmelt
+ddf <- 0.15 # cm degree C-1 day-1, degree day factor to calculate snowmelt
 pond_size <- 2 # cm
 
 density_mode <- "variable"
