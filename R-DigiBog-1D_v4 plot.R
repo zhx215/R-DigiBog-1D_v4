@@ -26,11 +26,11 @@ plot(NA,NA,xlim=x_scale,ylim=c(min(rm[!is.na(rm)]),max(rm[!is.na(rm)])),xlab="ti
 lines(seq(1,t_extent,1),rm,col="gray")
 lines(yr,rm_window,lwd=2)
 
-plot(NA,NA,xlim=x_scale,ylim=c(max(mb[!is.na(mb)]),min(mb[!is.na(mb)])),xlab="time yr",ylab="mass balance g m-2 yr-1")
+plot(NA,NA,xlim=x_scale,ylim=c(min(mb[!is.na(mb)]),max(mb[!is.na(mb)])),xlab="time yr",ylab="mass balance g m-2 yr-1")
 lines(seq(1,t_extent,1),mb,col="gray")
 lines(yr,mb_window,lwd=2)
 
-plot(NA,NA,xlim=x_scale,ylim=c(max(mar[!is.na(mar)]),min(mar[!is.na(mar)])),xlab="time yr",ylab="mass accmulation rate g m-2 yr-1")
+plot(NA,NA,xlim=x_scale,ylim=c(min(mar[!is.na(mar)]),max(mar[!is.na(mar)])),xlab="time yr",ylab="mass accmulation rate g m-2 yr-1")
 lines(seq(1,t_extent,1),mar,col="gray")
 lines(yr,mar_window,lwd=2)
 
@@ -98,4 +98,4 @@ lines(1:365,daily_pond_50)
 # correlation
 par(mfrow=c(3,2),mar=c(4.5,5,1,2))
 plot(rowSums(daily_precip_output[1001:3000,])*10,mb[1001:3000],xlab="precip mm yr-1",ylab="mass balance g m-2 yr-1")
-plot(rowMeans(daily_temp_output[1001:3000,])*10,mb[1001:3000],xlab="annual temp degree C",ylab="mass balance g m-2 yr-1")
+plot(rowMeans(daily_temp_output[1001:3000,]),mb[1001:3000],xlab="annual temp degree C",ylab="mass balance g m-2 yr-1")
